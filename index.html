@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="userProfiles">
+	<head>
+	</head>
+	<body ng-controller="MainController">
+		
+		<!--<div>{{test}}</div> just a test to see that the controller is linked properly-->
+		<div ng-repeat="user in users">
+			<div>First name: {{user.first_name}}</div>
+			<div>Last name: {{user.last_name}}</div>
+			<img src={{user.avatar}}>
+		</div>
+		
+		<!--Links to angular library -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.js"></script>
+		<!--Link to our javascript files-->
+		<script src="app/app.js"></script>
+		<script src="app/controller.js"></script>
+		<script src="app/service.js"></script>
+	</body>
+</html>
